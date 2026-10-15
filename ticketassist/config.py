@@ -22,9 +22,10 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def _load_dotenv(path: Path = ROOT / ".env") -> None:
-    """KEY=VALUE lines; real environment variables win over the file."""
+    """KEY=VALUE lines; a later line wins over an earlier one, real environment variables win over the file."""
     if not path.exists():
         return
+    found = {}
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
@@ -35,7 +36,9 @@ def _load_dotenv(path: Path = ROOT / ".env") -> None:
             v = v[1:].split(v[0], 1)[0]
         else:                             # unquoted: a " #" starts a comment
             v = v.split(" #", 1)[0].split("\t#", 1)[0].strip()
-        os.environ.setdefault(k.strip(), v)
+        found[k.strip()] = v
+    for k, v in found.items():
+        os.environ.setdefault(k, v)
 
 
 _load_dotenv()

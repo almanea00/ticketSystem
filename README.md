@@ -37,9 +37,10 @@ pages are found and the reply explains the timelines, citing them:
 ## Requirements
 
 - **Python 3.12** and [uv](https://docs.astral.sh/uv/); internet on the first run to download the models.
-- **An NVIDIA GPU with about 10 GB** for the decision model (d1-3B) and the embedder. The decision model cannot be
-  replaced by an API key: it reads the probability of each option, which chat APIs do not return. It can run in
-  the app or behind your own vLLM server (see `.env.example`).
+- **An NVIDIA GPU with about 10 GB** for the decision model (our fine-tuned d1-3B) and the embedder. The decision model
+  reads the probability of every option, so it runs in the app or on your own vLLM server (`TA_DECISION=api`, with a
+  key if your server has one; see `.env.example`), but not on a general chat API such as OpenAI's, which does not
+  return those probabilities for every option.
 - **The reply writer:** either a second GPU with about 6 GB (ALLaM-7B in 4-bit, the default `TA_LLM=local`), or an
   API key for any OpenAI-compatible provider. With an API key, one GPU is enough:
 

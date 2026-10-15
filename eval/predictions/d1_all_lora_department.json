@@ -1,0 +1,7 @@
+{
+ "system": "d1-3B + all-decisions LoRA (runs/d1_lora_all)",
+ "task": "department",
+ "n": 200,
+ "test": "arabic_support_natural_10000.csv test split, 5 per intent",
+ "date": "2026-10-15"
+}

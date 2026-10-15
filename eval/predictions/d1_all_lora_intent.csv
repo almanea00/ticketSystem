@@ -1,0 +1,201 @@
+ticket_id,lang,y_true,y_pred,dialect,group,tone
+28,ar,account_compromised,login_problem,ye_sanaa,Iraq / Yemen,neutral
+11,ar,account_compromised,login_problem,sy_damascus,Levant,neutral
+10,ar,account_compromised,login_problem,sy_damascus,Levant,neutral
+41,ar,account_compromised,login_problem,ps_urban,Levant,neutral
+2,ar,account_compromised,login_problem,ps_urban,Levant,neutral
+52,ar,app_error,app_error,ps_urban,Levant,angry
+80,ar,app_error,app_error,jo_amman,Levant,neutral
+73,ar,app_error,app_error,iq_baghdad,Iraq / Yemen,neutral
+66,ar,app_error,app_error,bh_urban,Gulf (other),neutral
+63,ar,app_error,app_error,dz_algiers,Maghreb,neutral
+107,ar,cancel_order,cancel_order,sa_najdi,Saudi Najdi,neutral
+124,ar,cancel_order,cancel_order,lb_beirut,Levant,polite
+127,ar,cancel_order,cancel_order,ae_urban,Gulf (other),neutral
+148,ar,cancel_order,cancel_order,kw_urban,Gulf (other),neutral
+112,ar,cancel_order,cancel_order,ae_urban,Gulf (other),neutral
+186,ar,cancel_subscription,cancel_subscription,ps_urban,Levant,neutral
+162,ar,cancel_subscription,cancel_subscription,msa,فصحى,neutral
+198,ar,cancel_subscription,cancel_subscription,bh_urban,Gulf (other),neutral
+173,ar,cancel_subscription,cancel_subscription,om_muscat,Gulf (other),neutral
+167,ar,cancel_subscription,cancel_subscription,sa_eastern,Saudi Eastern,neutral
+204,ar,change_order,exchange_item,dz_algiers,Maghreb,angry
+234,ar,change_order,change_order,msa,فصحى,neutral
+249,ar,change_order,exchange_item,tn_tunis,Maghreb,neutral
+200,ar,change_order,exchange_item,ye_sanaa,Iraq / Yemen,neutral
+248,ar,change_order,exchange_item,qa_urban,Gulf (other),neutral
+259,ar,change_shipping_address,change_shipping_address,ps_urban,Levant,angry
+294,ar,change_shipping_address,change_shipping_address,jo_amman,Levant,neutral
+260,ar,change_shipping_address,change_shipping_address,sy_damascus,Levant,neutral
+254,ar,change_shipping_address,change_shipping_address,kw_urban,Gulf (other),neutral
+296,ar,change_shipping_address,change_shipping_address,jo_amman,Levant,neutral
+302,ar,coupon_problem,coupon_problem,sd_khartoum,Egypt / Sudan,neutral
+301,ar,coupon_problem,coupon_problem,ps_urban,Levant,neutral
+321,ar,coupon_problem,coupon_problem,om_muscat,Gulf (other),neutral
+315,ar,coupon_problem,coupon_problem,ae_urban,Gulf (other),polite
+344,ar,coupon_problem,coupon_problem,ma_casablanca,Maghreb,polite
+369,ar,courier_complaint,courier_complaint,qa_urban,Gulf (other),neutral
+398,ar,courier_complaint,courier_complaint,bh_urban,Gulf (other),neutral
+364,ar,courier_complaint,courier_complaint,sa_eastern,Saudi Eastern,angry
+388,ar,courier_complaint,courier_complaint,dz_algiers,Maghreb,angry
+355,ar,courier_complaint,courier_complaint,sa_najdi,Saudi Najdi,neutral
+446,ar,customs_fee_question,shipping_fee,sd_khartoum,Egypt / Sudan,neutral
+424,ar,customs_fee_question,customs_fee_question,dz_algiers,Maghreb,neutral
+440,ar,customs_fee_question,shipping_fee,qa_urban,Gulf (other),neutral
+405,ar,customs_fee_question,customs_fee_question,om_muscat,Gulf (other),neutral
+444,ar,customs_fee_question,shipping_fee,ps_urban,Levant,neutral
+468,ar,damaged_item,damaged_item,ye_sanaa,Iraq / Yemen,neutral
+451,ar,damaged_item,damaged_item,bh_urban,Gulf (other),neutral
+466,ar,damaged_item,damaged_item,tn_tunis,Maghreb,polite
+494,ar,damaged_item,damaged_item,ae_urban,Gulf (other),angry
+463,ar,damaged_item,damaged_item,ae_urban,Gulf (other),neutral
+540,ar,delete_account,delete_account,sd_khartoum,Egypt / Sudan,neutral
+542,ar,delete_account,delete_account,dz_algiers,Maghreb,neutral
+534,ar,delete_account,delete_account,sa_eastern,Saudi Eastern,neutral
+521,ar,delete_account,delete_account,tn_tunis,Maghreb,neutral
+548,ar,delete_account,delete_account,ma_casablanca,Maghreb,neutral
+592,ar,delivered_not_received,delivered_not_received,jo_amman,Levant,neutral
+573,ar,delivered_not_received,delivered_not_received,ye_sanaa,Iraq / Yemen,neutral
+597,ar,delivered_not_received,delivered_not_received,dz_algiers,Maghreb,angry
+584,ar,delivered_not_received,delivered_not_received,ye_sanaa,Iraq / Yemen,neutral
+572,ar,delivered_not_received,delivered_not_received,kw_urban,Gulf (other),neutral
+640,ar,delivery_delay,delivery_delay,sa_najdi,Saudi Najdi,neutral
+636,ar,delivery_delay,delivery_delay,ps_urban,Levant,neutral
+609,ar,delivery_delay,product_availability,sa_najdi,Saudi Najdi,neutral
+611,ar,delivery_delay,delivery_delay,om_muscat,Gulf (other),neutral
+602,ar,delivery_delay,reschedule_delivery,dz_algiers,Maghreb,neutral
+658,ar,duplicate_charge,duplicate_charge,sd_khartoum,Egypt / Sudan,neutral
+694,ar,duplicate_charge,duplicate_charge,kw_urban,Gulf (other),angry
+674,ar,duplicate_charge,duplicate_charge,iq_baghdad,Iraq / Yemen,neutral
+686,ar,duplicate_charge,duplicate_charge,dz_algiers,Maghreb,neutral
+656,ar,duplicate_charge,duplicate_charge,tn_tunis,Maghreb,neutral
+701,ar,exchange_item,exchange_item,sd_khartoum,Egypt / Sudan,neutral
+705,ar,exchange_item,exchange_item,ma_casablanca,Maghreb,neutral
+717,ar,exchange_item,exchange_item,sa_najdi,Saudi Najdi,neutral
+716,ar,exchange_item,exchange_item,tn_tunis,Maghreb,neutral
+722,ar,exchange_item,exchange_item,eg_cairo,Egypt / Sudan,neutral
+766,ar,installment_payment_problem,installment_payment_problem,msa,فصحى,neutral
+787,ar,installment_payment_problem,installment_payment_problem,om_muscat,Gulf (other),angry
+757,ar,installment_payment_problem,installment_payment_problem,sa_eastern,Saudi Eastern,neutral
+772,ar,installment_payment_problem,installment_payment_problem,ye_sanaa,Iraq / Yemen,neutral
+753,ar,installment_payment_problem,installment_payment_problem,msa,فصحى,neutral
+811,ar,login_problem,login_problem,jo_amman,Levant,neutral
+802,ar,login_problem,login_problem,ma_casablanca,Maghreb,neutral
+830,ar,login_problem,login_problem,dz_algiers,Maghreb,neutral
+821,ar,login_problem,login_problem,ps_urban,Levant,angry
+834,ar,login_problem,login_problem,jo_amman,Levant,neutral
+862,ar,loyalty_points_problem,loyalty_points_problem,iq_baghdad,Iraq / Yemen,neutral
+879,ar,loyalty_points_problem,loyalty_points_problem,iq_baghdad,Iraq / Yemen,neutral
+882,ar,loyalty_points_problem,loyalty_points_problem,om_muscat,Gulf (other),neutral
+852,ar,loyalty_points_problem,loyalty_points_problem,sa_eastern,Saudi Eastern,neutral
+887,ar,loyalty_points_problem,loyalty_points_problem,ae_urban,Gulf (other),neutral
+912,ar,missing_item,missing_item,ae_urban,Gulf (other),neutral
+948,ar,missing_item,missing_item,ma_casablanca,Maghreb,neutral
+910,ar,missing_item,missing_item,ye_sanaa,Iraq / Yemen,neutral
+931,ar,missing_item,missing_item,kw_urban,Gulf (other),neutral
+904,ar,missing_item,missing_item,sa_eastern,Saudi Eastern,neutral
+968,ar,payment_deducted_no_order,payment_deducted_no_order,bh_urban,Gulf (other),neutral
+998,ar,payment_deducted_no_order,payment_deducted_no_order,bh_urban,Gulf (other),polite
+962,ar,payment_deducted_no_order,payment_deducted_no_order,bh_urban,Gulf (other),neutral
+980,ar,payment_deducted_no_order,payment_deducted_no_order,om_muscat,Gulf (other),neutral
+950,ar,payment_deducted_no_order,payment_deducted_no_order,kw_urban,Gulf (other),neutral
+1010,ar,payment_failed,payment_failed,ma_casablanca,Maghreb,neutral
+1008,ar,payment_failed,payment_failed,sa_najdi,Saudi Najdi,neutral
+1044,ar,payment_failed,payment_failed,bh_urban,Gulf (other),neutral
+1049,ar,payment_failed,payment_failed,sa_hijazi,Saudi Hijazi,neutral
+1001,ar,payment_failed,payment_failed,jo_amman,Levant,neutral
+1086,ar,personal_data_request,personal_data_request,om_muscat,Gulf (other),neutral
+1055,ar,personal_data_request,personal_data_request,tn_tunis,Maghreb,neutral
+1069,ar,personal_data_request,personal_data_request,sa_hijazi,Saudi Hijazi,angry
+1090,ar,personal_data_request,personal_data_request,ma_casablanca,Maghreb,neutral
+1094,ar,personal_data_request,personal_data_request,dz_algiers,Maghreb,neutral
+1148,ar,product_availability,product_availability,msa,فصحى,polite
+1142,ar,product_availability,product_availability,ye_sanaa,Iraq / Yemen,neutral
+1105,ar,product_availability,product_availability,bh_urban,Gulf (other),neutral
+1147,ar,product_availability,product_availability,kw_urban,Gulf (other),neutral
+1149,ar,product_availability,product_availability,om_muscat,Gulf (other),neutral
+1168,ar,product_usage_help,product_usage_help,kw_urban,Gulf (other),angry
+1187,ar,product_usage_help,product_usage_help,lb_beirut,Levant,neutral
+1179,ar,product_usage_help,product_usage_help,ye_sanaa,Iraq / Yemen,polite
+1162,ar,product_usage_help,product_usage_help,sa_eastern,Saudi Eastern,neutral
+1186,ar,product_usage_help,product_usage_help,tn_tunis,Maghreb,neutral
+1249,ar,refund_status,refund_status,ae_urban,Gulf (other),neutral
+1201,ar,refund_status,refund_status,om_muscat,Gulf (other),angry
+1226,ar,refund_status,refund_status,jo_amman,Levant,neutral
+1243,ar,refund_status,refund_status,om_muscat,Gulf (other),neutral
+1203,ar,refund_status,refund_status,dz_algiers,Maghreb,neutral
+1258,ar,request_invoice,request_invoice,sa_hijazi,Saudi Hijazi,neutral
+1255,ar,request_invoice,request_invoice,iq_baghdad,Iraq / Yemen,neutral
+1270,ar,request_invoice,request_invoice,dz_algiers,Maghreb,angry
+1296,ar,request_invoice,request_invoice,jo_amman,Levant,neutral
+1297,ar,request_invoice,request_invoice,ps_urban,Levant,neutral
+1344,ar,reschedule_delivery,reschedule_delivery,jo_amman,Levant,polite
+1333,ar,reschedule_delivery,reschedule_delivery,bh_urban,Gulf (other),neutral
+1349,ar,reschedule_delivery,reschedule_delivery,tn_tunis,Maghreb,neutral
+1324,ar,reschedule_delivery,reschedule_delivery,ps_urban,Levant,neutral
+1335,ar,reschedule_delivery,reschedule_delivery,ps_urban,Levant,neutral
+1371,ar,reset_password,reset_password,eg_cairo,Egypt / Sudan,neutral
+1356,ar,reset_password,reset_password,ye_sanaa,Iraq / Yemen,neutral
+1359,ar,reset_password,reset_password,qa_urban,Gulf (other),neutral
+1350,ar,reset_password,reset_password,sa_najdi,Saudi Najdi,neutral
+1353,ar,reset_password,reset_password,kw_urban,Gulf (other),neutral
+1439,ar,return_item,return_item,ps_urban,Levant,angry
+1406,ar,return_item,return_item,ps_urban,Levant,neutral
+1440,ar,return_item,return_item,eg_cairo,Egypt / Sudan,neutral
+1441,ar,return_item,return_item,om_muscat,Gulf (other),neutral
+1428,ar,return_item,return_item,jo_amman,Levant,neutral
+1489,ar,service_complaint,service_complaint,qa_urban,Gulf (other),neutral
+1477,ar,service_complaint,service_complaint,iq_baghdad,Iraq / Yemen,neutral
+1453,ar,service_complaint,service_complaint,bh_urban,Gulf (other),neutral
+1496,ar,service_complaint,service_complaint,ps_urban,Levant,neutral
+1452,ar,service_complaint,service_complaint,bh_urban,Gulf (other),polite
+1527,ar,shipping_fee,shipping_fee,om_muscat,Gulf (other),neutral
+1528,ar,shipping_fee,shipping_fee,iq_baghdad,Iraq / Yemen,neutral
+1519,ar,shipping_fee,shipping_fee,ma_casablanca,Maghreb,neutral
+1535,ar,shipping_fee,shipping_fee,eg_cairo,Egypt / Sudan,neutral
+1542,ar,shipping_fee,shipping_fee,ye_sanaa,Iraq / Yemen,neutral
+1593,ar,track_order,track_order,bh_urban,Gulf (other),neutral
+1550,ar,track_order,track_order,iq_baghdad,Iraq / Yemen,neutral
+1595,ar,track_order,track_order,bh_urban,Gulf (other),polite
+1565,ar,track_order,track_order,om_muscat,Gulf (other),neutral
+1552,ar,track_order,track_order,ma_casablanca,Maghreb,neutral
+1621,ar,unauthorized_payment,unauthorized_payment,ae_urban,Gulf (other),neutral
+1609,ar,unauthorized_payment,unauthorized_payment,om_muscat,Gulf (other),neutral
+1641,ar,unauthorized_payment,unauthorized_payment,ma_casablanca,Maghreb,neutral
+1623,ar,unauthorized_payment,unauthorized_payment,eg_cairo,Egypt / Sudan,neutral
+1632,ar,unauthorized_payment,unauthorized_payment,sa_najdi,Saudi Najdi,neutral
+1665,ar,unexpected_subscription_renewal,unexpected_subscription_renewal,eg_cairo,Egypt / Sudan,neutral
+1684,ar,unexpected_subscription_renewal,unexpected_subscription_renewal,iq_baghdad,Iraq / Yemen,neutral
+1693,ar,unexpected_subscription_renewal,unexpected_subscription_renewal,sa_najdi,Saudi Najdi,angry
+1680,ar,unexpected_subscription_renewal,unexpected_subscription_renewal,dz_algiers,Maghreb,neutral
+1688,ar,unexpected_subscription_renewal,unexpected_subscription_renewal,ma_casablanca,Maghreb,neutral
+1703,ar,unsafe_product,unsafe_product,sa_hijazi,Saudi Hijazi,neutral
+1746,ar,unsafe_product,unsafe_product,kw_urban,Gulf (other),neutral
+1728,ar,unsafe_product,unsafe_product,ye_sanaa,Iraq / Yemen,angry
+1702,ar,unsafe_product,unsafe_product,om_muscat,Gulf (other),angry
+1704,ar,unsafe_product,unsafe_product,dz_algiers,Maghreb,neutral
+1756,ar,unsubscribe_marketing,unsubscribe_marketing,ps_urban,Levant,neutral
+1795,ar,unsubscribe_marketing,unsubscribe_marketing,dz_algiers,Maghreb,neutral
+1766,ar,unsubscribe_marketing,unsubscribe_marketing,ps_urban,Levant,neutral
+1787,ar,unsubscribe_marketing,unsubscribe_marketing,iq_baghdad,Iraq / Yemen,neutral
+1797,ar,unsubscribe_marketing,unsubscribe_marketing,bh_urban,Gulf (other),neutral
+1832,ar,update_email,update_email,ps_urban,Levant,neutral
+1823,ar,update_email,update_email,dz_algiers,Maghreb,neutral
+1834,ar,update_email,update_email,sa_najdi,Saudi Najdi,angry
+1828,ar,update_email,update_email,qa_urban,Gulf (other),neutral
+1815,ar,update_email,update_email,sa_hijazi,Saudi Hijazi,neutral
+1874,ar,update_phone_number,update_phone_number,bh_urban,Gulf (other),angry
+1899,ar,update_phone_number,update_phone_number,sy_damascus,Levant,angry
+1892,ar,update_phone_number,update_phone_number,om_muscat,Gulf (other),neutral
+1861,ar,update_phone_number,update_phone_number,bh_urban,Gulf (other),neutral
+1853,ar,update_phone_number,update_phone_number,kw_urban,Gulf (other),neutral
+1914,ar,warranty_claim,warranty_claim,jo_amman,Levant,neutral
+1916,ar,warranty_claim,warranty_claim,bh_urban,Gulf (other),neutral
+1902,ar,warranty_claim,warranty_claim,dz_algiers,Maghreb,neutral
+1947,ar,warranty_claim,warranty_claim,ye_sanaa,Iraq / Yemen,neutral
+1930,ar,warranty_claim,warranty_claim,sa_hijazi,Saudi Hijazi,neutral
+1981,ar,wrong_item,wrong_item,ye_sanaa,Iraq / Yemen,neutral
+1980,ar,wrong_item,wrong_item,kw_urban,Gulf (other),neutral
+1959,ar,wrong_item,wrong_item,ae_urban,Gulf (other),neutral
+1999,ar,wrong_item,wrong_item,eg_cairo,Egypt / Sudan,neutral
+1969,ar,wrong_item,wrong_item,ye_sanaa,Iraq / Yemen,polite

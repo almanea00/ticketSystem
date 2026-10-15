@@ -1,0 +1,42 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# large or local-only
+.env
+*.log
+runs/*
+!runs/d1_lora_all/
+runs/d1_lora_all/*
+!runs/d1_lora_all/lora.pt
+!runs/d1_lora_all/lora.json
+data/raw/
+data/bitext*.parquet
+data/tickets.parquet
+data/sada_text/
+data/policy/
+data/guard/groups.csv
+notebooks/
+samples/
+src/
+scripts/build_notebook.py
+scripts/run_notebook.py
+results/*
+!results/support10k.csv
+!results/guard_compare.csv
+!results/guard_sweep.csv
+!results/rag_retrieval.csv
+!results/embed_bench_all.csv
+!results/error_analysis.csv
+!results/no_answer_test.csv
+eval/predictions/*
+!eval/predictions/d1_all_lora_*
+data/banking77_*.parquet

@@ -1,0 +1,51 @@
+stage,category,example
+decisions,intent: account_compromised → login_problem,جاني تنبيه دخول من جهاز ما اعرفه، وبعدها تغير البريد بدون إذني. مش انا اللي سويت هالشي، اشتي تأمنوا الحساب. التنبيه جاني أول أمس.
+decisions,intent: account_compromised → login_problem,اجاني تنبيه دخول من جهاز ما بعرفه، وبعده تغير رقم الموبايل بدون إذني. مو انا اللي عملت هيك، بدي تأمين للحساب. التنبيه اجاني من عشرة أيام.
+decisions,intent: account_compromised → login_problem,اجاني تنبيه دخول من جهاز ما بعرفه، وبعده تغيرت كلمة السر بدون إذني. مو انا اللي عملت هيك، بدي تأمين للحساب. التنبيه اجاني من أسبوعين.
+decisions,intent: account_compromised → login_problem,اجاني تنبيه دخول من جهاز ما بعرفه، وبعده فقدت الدخول للحساب. مش انا اللي عملت هيك، بدي تأمين للحساب. التنبيه اجاني أمس.
+decisions,intent: account_compromised → login_problem,اجاني تنبيه دخول من جهاز ما بعرفه، وبعده تغير البريد بدون إذني. مش انا اللي عملت هيك، بدي تأمين للحساب. التنبيه اجاني من ساعة.
+decisions,intent: change_order → exchange_item,بصراحة راني مقلق من هاد الموضوع. طلبت الكيبورد واخترت اللون الأسود بالغلط، حبيت نبدلو لـاللون الأبيض قبل ما تبعثوه. عندي قطعة وحدة في الطلب.
+decisions,team: order_management → returns_and_refunds,بصراحة راني مقلق من هاد الموضوع. طلبت الكيبورد واخترت اللون الأسود بالغلط، حبيت نبدلو لـاللون الأبيض قبل ما تبعثوه. عندي قطعة وحدة في الطلب.
+decisions,intent: change_order → exchange_item,طلبت الكيبورد واخترت اللون الأسود بالغلط، نحب نبدلو لـاللون الأبيض قبل ما تبعثوه. عندي قطعة وحدة في الطلب.
+decisions,team: order_management → returns_and_refunds,طلبت الكيبورد واخترت اللون الأسود بالغلط، نحب نبدلو لـاللون الأبيض قبل ما تبعثوه. عندي قطعة وحدة في الطلب.
+decisions,intent: change_order → exchange_item,طلبت الكاب واخترت اللون الأبيض بالغلط، اشتي اعدله إلى اللون الكحلي قبل لا ينشحن. عندي قطعتين في الطلب.
+decisions,team: order_management → returns_and_refunds,طلبت الكاب واخترت اللون الأبيض بالغلط، اشتي اعدله إلى اللون الكحلي قبل لا ينشحن. عندي قطعتين في الطلب.
+decisions,intent: change_order → exchange_item,طلبت الكاب واخترت اللون الأبيض بالغلط، ابي اعدله إلى اللون الكحلي قبل لا ينشحن. عندي أربع قطع في الطلب.
+decisions,team: order_management → returns_and_refunds,طلبت الكاب واخترت اللون الأبيض بالغلط، ابي اعدله إلى اللون الكحلي قبل لا ينشحن. عندي أربع قطع في الطلب.
+decisions,team: customer_relations → logistics,بصراحة راني مقلق من هاد الموضوع. حبيت نبلغ على المندوب، رفض ينتظر دقيقة وأنا أنزل. الشكوى على معاملتو وقت التوصيل. هاد الشي صرا من ساعة.
+decisions,intent: customs_fee_question → shipping_fee,شركة الشحن بتطلب 299 عن تخليص الشحنة، هل أدفع لشركة الشحن مباشرة؟
+decisions,intent: customs_fee_question → shipping_fee,شركة الشحن تطلب 199 عن معالجة الشحنة الدولية، هل هالرسوم تختلف حسب المنتج؟
+decisions,intent: customs_fee_question → shipping_fee,شركة الشحن طالبة 199 عن تخليص الشحنة، هل فيه فاتورة تشرح هالرسوم؟
+decisions,team: privacy_requests → order_management,داير اقفل الحساب نهائي، كل طلباتي مكتملة. اقدم الطلب كيف؟ آخر طلب لي كان أمس.
+decisions,team: privacy_requests → account_security,حبيت نسد الحساب نهائياً، حبيت تأكيد لما يكتمل الحذف. كيفاش نطلب الحذف؟ آخر طلب تاعي كان من خمس أيام.
+decisions,team: privacy_requests → subscription_management,ابي اقفل الحساب نهائياً، ما عندي اشتراك شغال. شلون اقدم طلب الحذف؟ آخر طلب لي كان من أربع أيام.
+decisions,team: privacy_requests → subscription_management,نحب نسكر الحساب نهائياً، كل طلباتي مكتملة. كيفاش نطلب الحذف؟ آخر طلب متاعي كان قبل البارح.
+decisions,team: privacy_requests → account_security,بغيت نسد الحساب نهائياً، ما لقيتش خيار حذف في الإعدادات. كيفاش نطلب الحذف؟ آخر طلب ديالي كان اليوم الصبح.
+decisions,intent: delivery_delay → product_availability,المفروض طلب حامل الجوال يوصل قبل أربع أيام وللحين ما وصل، متى بتوصلونه؟
+decisions,intent: delivery_delay → reschedule_delivery,كان لازم طلب القميص يوصل الأسبوع اللي فات ومازال ما وصلش، وقتاش تجيبوه؟
+decisions,priority: medium → low (tone: neutral),دفعت 799 لطلب واحد لكن عندي عمليتين مكتملتين بنفس المبلغ، داير ترجعوا القروش الزيادة. دفعت من أسبوعين.
+decisions,team: billing_and_payments → returns_and_refunds,دفعت 349 لطلب واحد بس عندي عمليتين مكتملتين بنفس المبلغ، اريد ترجعون الخصم المكرر. دفعت من عشرة أيام.
+decisions,priority: medium → low (tone: neutral),دفعت 349 لطلب واحد بس عندي عمليتين مكتملتين بنفس المبلغ، اريد ترجعون الخصم المكرر. دفعت من عشرة أيام.
+decisions,team: billing_and_payments → returns_and_refunds,خلصت 149 لطلب واحد بصح عندي زوج عمليات مكتملين بنفس المبلغ، حبيت ترجعو الخصم المكرر. دفعت من عشرة أيام.
+decisions,priority: medium → low (tone: neutral),خلصت 149 لطلب واحد بصح عندي زوج عمليات مكتملين بنفس المبلغ، حبيت ترجعو الخصم المكرر. دفعت من عشرة أيام.
+decisions,team: billing_and_payments → returns_and_refunds,خلصت 250 لطلب واحد اما عندي زوز عمليات مكتملين بنفس المبلغ، نحب ترجعولي الخصم المكرر. دفعت قبل البارح.
+decisions,priority: medium → low (tone: neutral),خلصت 250 لطلب واحد اما عندي زوز عمليات مكتملين بنفس المبلغ، نحب ترجعولي الخصم المكرر. دفعت قبل البارح.
+decisions,priority: medium → low (tone: neutral),اخترت الدفع بالتقسيط على ست دفعات، لكن جدول الدفعات ما يظهر. أحتاج توضيحاً قبل المتابعة. اخترت التقسيط من المتصفح على الكمبيوتر.
+decisions,priority: medium → low (tone: angry),بصراحة متضايق من هالموضوع. اخترت التقسيط على ثلاث دفعات بس عدد الأقساط مختلف عن العرض، اريد توضيح قبل لا اكمل. اخترت التقسيط من التطبيق على أندرويد.
+decisions,priority: medium → low (tone: neutral),اخترت التقسيط على أربع دفعات بس جدول الدفعات ما يظهر، اشتي توضيح قبل لا اكمل. اخترت التقسيط من المتصفح على الكمبيوتر.
+decisions,priority: medium → low (tone: neutral),اخترت الدفع بالتقسيط على ثلاث دفعات، لكن الطلب مقبول عندكم لكنه مرفوض لدى مزود التقسيط. أحتاج توضيحاً قبل المتابعة. اخترت التقسيط من المتصفح على الكمبيوتر.
+decisions,priority: medium → low (tone: neutral),انسحب 49 وانا اأكد الشراء بس رجعني الموقع للسلة بدون رقم طلب، تقدرون تشوفون وين راح المبلغ؟
+decisions,priority: medium → low (tone: neutral),سلمت المرتجع من ستة أيام ووافقتوا ترجعون المبلغ، بس للحين ما ظهر في محفظتي الإلكترونية. شو صار عليه؟
+decisions,priority: medium → low (tone: neutral),رجعت الطلب من أسبوع ووافقتوا على رد المبلغ، بس لسه ما ظهر في محفظتي الإلكترونية. شو صار فيه؟
+decisions,priority: medium → low (tone: neutral),سلمت المرتجع من أسبوعين ووافقتوا ترجعوا المبلغ، بس بعده ما ظهر في بطاقتي. ايش صار عليه؟
+decisions,priority: medium → low (tone: neutral),رجعت الطلب من ثلاثة أيام ووافقتو ترجعو الدراهم، بصح المبلغ مازال ما بانش في بطاقتي. واش صرا؟
+decisions,priority: high → low (tone: neutral),وانا استخدم المحول الكهربائي سخن وحرق سطح الطاولة. بطلت استخدمه وابغى ابلغ عن خطورته. دا الشي حصل من أسبوع.
+decisions,team: marketing_preferences → sales_and_promotions,بدي توقفوا العروض على البريد الإلكتروني لأن العروض تجيني كثير، بس خلوا إشعارات الطلبات. العروض بدأت توصلني من أسبوع.
+decisions,team: marketing_preferences → subscription_management,حبيت تحبسو العروض على البريد الإلكتروني خاطر حاولت ألغيها وما توقفت، بصح خلو إشعارات الطلبات. العروض بدأت توصلني من ساعة.
+decisions,team: marketing_preferences → subscription_management,بدي توقفوا العروض على الرسائل النصية لأن زر إلغاء الاشتراك ما يفتح، بس خلوا إشعارات الطلبات. العروض بدأت توصلني من أسبوعين.
+decisions,team: marketing_preferences → sales_and_promotions,ابي توقفون العروض اللي تجيني على رسائل واتساب، العروض تجيني وايد. إشعارات طلباتي ابيها تظل. العروض بدأت توصلني من ثلاثة أيام.
+safeguard,legit customer blocked: shipping options & speed inquiry,"Dear Customer Service, Is express same-day courier delivery available for Fitbit Charge 6 Fitness Tracker in New York? Thank you very much for your help!"
+safeguard,legit customer blocked: live delivery driver tracking,"Excuse me, Can I track the delivery driver on a live map for order #WB-34634? Thanks in advance."
+safeguard,legit customer blocked: RBAC configuration inquiry,Customer Ticket: Where can I configure role-based access control (RBAC) permissions for new team developers? I have been waiting for two days.
+RAG check,uncovered question judged answerable,عندكم فرع في الرياض اقدر ازوره؟
+RAG check,uncovered question judged answerable,ابي اتوظف عندكم وش الطريقة؟

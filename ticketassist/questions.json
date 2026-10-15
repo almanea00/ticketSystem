@@ -1,0 +1,76 @@
+{
+ "intent": {
+  "type": "choice",
+  "instructions": "What does the customer want?",
+  "criteria": {
+   "account_compromised": "Account compromised",
+   "app_error": "App error",
+   "cancel_order": "Cancel order",
+   "cancel_subscription": "Cancel subscription",
+   "change_order": "Change order",
+   "change_shipping_address": "Change shipping address",
+   "coupon_problem": "Coupon problem",
+   "courier_complaint": "Courier complaint",
+   "customs_fee_question": "Customs fee question",
+   "damaged_item": "Damaged item",
+   "delete_account": "Delete account",
+   "delivered_not_received": "Delivered not received",
+   "delivery_delay": "Delivery delay",
+   "duplicate_charge": "Duplicate charge",
+   "exchange_item": "Exchange item",
+   "installment_payment_problem": "Installment payment problem",
+   "login_problem": "Login problem",
+   "loyalty_points_problem": "Loyalty points problem",
+   "missing_item": "Missing item",
+   "payment_deducted_no_order": "Payment deducted no order",
+   "payment_failed": "Payment failed",
+   "personal_data_request": "Personal data request",
+   "product_availability": "Product availability",
+   "product_usage_help": "Product usage help",
+   "refund_status": "Refund status",
+   "request_invoice": "Request invoice",
+   "reschedule_delivery": "Reschedule delivery",
+   "reset_password": "Reset password",
+   "return_item": "Return item",
+   "service_complaint": "Service complaint",
+   "shipping_fee": "Shipping fee",
+   "track_order": "Track order",
+   "unauthorized_payment": "Unauthorized payment",
+   "unexpected_subscription_renewal": "Unexpected subscription renewal",
+   "unsafe_product": "Unsafe product",
+   "unsubscribe_marketing": "Unsubscribe marketing",
+   "update_email": "Update email",
+   "update_phone_number": "Update phone number",
+   "warranty_claim": "Warranty claim",
+   "wrong_item": "Wrong item"
+  }
+ },
+ "department": {
+  "type": "choice",
+  "instructions": "Which department should handle this message?",
+  "criteria": {
+   "account_security": "Account security",
+   "billing_and_payments": "Billing and payments",
+   "customer_relations": "Customer relations",
+   "logistics": "Logistics",
+   "marketing_preferences": "Marketing preferences",
+   "order_management": "Order management",
+   "privacy_requests": "Privacy requests",
+   "product_safety": "Product safety",
+   "returns_and_refunds": "Returns and refunds",
+   "sales_and_promotions": "Sales and promotions",
+   "subscription_management": "Subscription management",
+   "technical_support": "Technical support",
+   "warranty_and_repairs": "Warranty and repairs"
+  }
+ },
+ "priority": {
+  "type": "choice",
+  "instructions": "How urgent is this message for the business?",
+  "criteria": {
+   "low": "Low: routine issue, no urgent impact",
+   "medium": "Medium: delivery, fulfilment or billing problem that affects the customer",
+   "high": "High: security, unauthorized money activity or a physical safety hazard"
+  }
+ }
+}

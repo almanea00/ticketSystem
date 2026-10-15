@@ -1,0 +1,201 @@
+ticket_id,lang,y_true,y_pred,dialect,group,tone
+28,ar,high,high,ye_sanaa,Iraq / Yemen,neutral
+11,ar,high,high,sy_damascus,Levant,neutral
+10,ar,high,high,sy_damascus,Levant,neutral
+41,ar,high,high,ps_urban,Levant,neutral
+2,ar,high,high,ps_urban,Levant,neutral
+52,ar,low,low,ps_urban,Levant,angry
+80,ar,low,low,jo_amman,Levant,neutral
+73,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+66,ar,low,low,bh_urban,Gulf (other),neutral
+63,ar,low,low,dz_algiers,Maghreb,neutral
+107,ar,low,low,sa_najdi,Saudi Najdi,neutral
+124,ar,low,low,lb_beirut,Levant,polite
+127,ar,low,low,ae_urban,Gulf (other),neutral
+148,ar,low,low,kw_urban,Gulf (other),neutral
+112,ar,low,low,ae_urban,Gulf (other),neutral
+186,ar,low,low,ps_urban,Levant,neutral
+162,ar,low,low,msa,فصحى,neutral
+198,ar,low,low,bh_urban,Gulf (other),neutral
+173,ar,low,low,om_muscat,Gulf (other),neutral
+167,ar,low,low,sa_eastern,Saudi Eastern,neutral
+204,ar,low,low,dz_algiers,Maghreb,angry
+234,ar,low,low,msa,فصحى,neutral
+249,ar,low,low,tn_tunis,Maghreb,neutral
+200,ar,low,low,ye_sanaa,Iraq / Yemen,neutral
+248,ar,low,low,qa_urban,Gulf (other),neutral
+259,ar,low,low,ps_urban,Levant,angry
+294,ar,low,low,jo_amman,Levant,neutral
+260,ar,low,low,sy_damascus,Levant,neutral
+254,ar,low,low,kw_urban,Gulf (other),neutral
+296,ar,low,low,jo_amman,Levant,neutral
+302,ar,low,low,sd_khartoum,Egypt / Sudan,neutral
+301,ar,low,low,ps_urban,Levant,neutral
+321,ar,low,low,om_muscat,Gulf (other),neutral
+315,ar,low,low,ae_urban,Gulf (other),polite
+344,ar,low,low,ma_casablanca,Maghreb,polite
+369,ar,low,low,qa_urban,Gulf (other),neutral
+398,ar,low,low,bh_urban,Gulf (other),neutral
+364,ar,low,low,sa_eastern,Saudi Eastern,angry
+388,ar,low,low,dz_algiers,Maghreb,angry
+355,ar,low,low,sa_najdi,Saudi Najdi,neutral
+446,ar,low,low,sd_khartoum,Egypt / Sudan,neutral
+424,ar,low,low,dz_algiers,Maghreb,neutral
+440,ar,low,low,qa_urban,Gulf (other),neutral
+405,ar,low,low,om_muscat,Gulf (other),neutral
+444,ar,low,low,ps_urban,Levant,neutral
+468,ar,medium,medium,ye_sanaa,Iraq / Yemen,neutral
+451,ar,medium,medium,bh_urban,Gulf (other),neutral
+466,ar,medium,medium,tn_tunis,Maghreb,polite
+494,ar,medium,medium,ae_urban,Gulf (other),angry
+463,ar,medium,medium,ae_urban,Gulf (other),neutral
+540,ar,low,low,sd_khartoum,Egypt / Sudan,neutral
+542,ar,low,low,dz_algiers,Maghreb,neutral
+534,ar,low,low,sa_eastern,Saudi Eastern,neutral
+521,ar,low,low,tn_tunis,Maghreb,neutral
+548,ar,low,low,ma_casablanca,Maghreb,neutral
+592,ar,medium,medium,jo_amman,Levant,neutral
+573,ar,medium,medium,ye_sanaa,Iraq / Yemen,neutral
+597,ar,medium,medium,dz_algiers,Maghreb,angry
+584,ar,medium,medium,ye_sanaa,Iraq / Yemen,neutral
+572,ar,medium,medium,kw_urban,Gulf (other),neutral
+640,ar,medium,medium,sa_najdi,Saudi Najdi,neutral
+636,ar,medium,medium,ps_urban,Levant,neutral
+609,ar,medium,medium,sa_najdi,Saudi Najdi,neutral
+611,ar,medium,medium,om_muscat,Gulf (other),neutral
+602,ar,medium,medium,dz_algiers,Maghreb,neutral
+658,ar,medium,low,sd_khartoum,Egypt / Sudan,neutral
+694,ar,medium,medium,kw_urban,Gulf (other),angry
+674,ar,medium,low,iq_baghdad,Iraq / Yemen,neutral
+686,ar,medium,low,dz_algiers,Maghreb,neutral
+656,ar,medium,low,tn_tunis,Maghreb,neutral
+701,ar,low,low,sd_khartoum,Egypt / Sudan,neutral
+705,ar,low,low,ma_casablanca,Maghreb,neutral
+717,ar,low,low,sa_najdi,Saudi Najdi,neutral
+716,ar,low,low,tn_tunis,Maghreb,neutral
+722,ar,low,low,eg_cairo,Egypt / Sudan,neutral
+766,ar,medium,low,msa,فصحى,neutral
+787,ar,medium,low,om_muscat,Gulf (other),angry
+757,ar,medium,medium,sa_eastern,Saudi Eastern,neutral
+772,ar,medium,low,ye_sanaa,Iraq / Yemen,neutral
+753,ar,medium,low,msa,فصحى,neutral
+811,ar,low,low,jo_amman,Levant,neutral
+802,ar,low,low,ma_casablanca,Maghreb,neutral
+830,ar,low,low,dz_algiers,Maghreb,neutral
+821,ar,low,low,ps_urban,Levant,angry
+834,ar,low,low,jo_amman,Levant,neutral
+862,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+879,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+882,ar,low,low,om_muscat,Gulf (other),neutral
+852,ar,low,low,sa_eastern,Saudi Eastern,neutral
+887,ar,low,low,ae_urban,Gulf (other),neutral
+912,ar,medium,medium,ae_urban,Gulf (other),neutral
+948,ar,medium,medium,ma_casablanca,Maghreb,neutral
+910,ar,medium,medium,ye_sanaa,Iraq / Yemen,neutral
+931,ar,medium,medium,kw_urban,Gulf (other),neutral
+904,ar,medium,medium,sa_eastern,Saudi Eastern,neutral
+968,ar,medium,medium,bh_urban,Gulf (other),neutral
+998,ar,medium,medium,bh_urban,Gulf (other),polite
+962,ar,medium,medium,bh_urban,Gulf (other),neutral
+980,ar,medium,medium,om_muscat,Gulf (other),neutral
+950,ar,medium,low,kw_urban,Gulf (other),neutral
+1010,ar,low,low,ma_casablanca,Maghreb,neutral
+1008,ar,low,low,sa_najdi,Saudi Najdi,neutral
+1044,ar,low,low,bh_urban,Gulf (other),neutral
+1049,ar,low,low,sa_hijazi,Saudi Hijazi,neutral
+1001,ar,low,low,jo_amman,Levant,neutral
+1086,ar,low,low,om_muscat,Gulf (other),neutral
+1055,ar,low,low,tn_tunis,Maghreb,neutral
+1069,ar,low,low,sa_hijazi,Saudi Hijazi,angry
+1090,ar,low,low,ma_casablanca,Maghreb,neutral
+1094,ar,low,low,dz_algiers,Maghreb,neutral
+1148,ar,low,low,msa,فصحى,polite
+1142,ar,low,low,ye_sanaa,Iraq / Yemen,neutral
+1105,ar,low,low,bh_urban,Gulf (other),neutral
+1147,ar,low,low,kw_urban,Gulf (other),neutral
+1149,ar,low,low,om_muscat,Gulf (other),neutral
+1168,ar,low,low,kw_urban,Gulf (other),angry
+1187,ar,low,low,lb_beirut,Levant,neutral
+1179,ar,low,low,ye_sanaa,Iraq / Yemen,polite
+1162,ar,low,low,sa_eastern,Saudi Eastern,neutral
+1186,ar,low,low,tn_tunis,Maghreb,neutral
+1249,ar,medium,low,ae_urban,Gulf (other),neutral
+1201,ar,medium,medium,om_muscat,Gulf (other),angry
+1226,ar,medium,low,jo_amman,Levant,neutral
+1243,ar,medium,low,om_muscat,Gulf (other),neutral
+1203,ar,medium,low,dz_algiers,Maghreb,neutral
+1258,ar,low,low,sa_hijazi,Saudi Hijazi,neutral
+1255,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+1270,ar,low,low,dz_algiers,Maghreb,angry
+1296,ar,low,low,jo_amman,Levant,neutral
+1297,ar,low,low,ps_urban,Levant,neutral
+1344,ar,low,low,jo_amman,Levant,polite
+1333,ar,low,low,bh_urban,Gulf (other),neutral
+1349,ar,low,low,tn_tunis,Maghreb,neutral
+1324,ar,low,low,ps_urban,Levant,neutral
+1335,ar,low,low,ps_urban,Levant,neutral
+1371,ar,low,low,eg_cairo,Egypt / Sudan,neutral
+1356,ar,low,low,ye_sanaa,Iraq / Yemen,neutral
+1359,ar,low,low,qa_urban,Gulf (other),neutral
+1350,ar,low,low,sa_najdi,Saudi Najdi,neutral
+1353,ar,low,low,kw_urban,Gulf (other),neutral
+1439,ar,low,low,ps_urban,Levant,angry
+1406,ar,low,low,ps_urban,Levant,neutral
+1440,ar,low,low,eg_cairo,Egypt / Sudan,neutral
+1441,ar,low,low,om_muscat,Gulf (other),neutral
+1428,ar,low,low,jo_amman,Levant,neutral
+1489,ar,low,low,qa_urban,Gulf (other),neutral
+1477,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+1453,ar,low,low,bh_urban,Gulf (other),neutral
+1496,ar,low,low,ps_urban,Levant,neutral
+1452,ar,low,low,bh_urban,Gulf (other),polite
+1527,ar,low,low,om_muscat,Gulf (other),neutral
+1528,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+1519,ar,low,low,ma_casablanca,Maghreb,neutral
+1535,ar,low,low,eg_cairo,Egypt / Sudan,neutral
+1542,ar,low,low,ye_sanaa,Iraq / Yemen,neutral
+1593,ar,low,low,bh_urban,Gulf (other),neutral
+1550,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+1595,ar,low,low,bh_urban,Gulf (other),polite
+1565,ar,low,low,om_muscat,Gulf (other),neutral
+1552,ar,low,low,ma_casablanca,Maghreb,neutral
+1621,ar,high,high,ae_urban,Gulf (other),neutral
+1609,ar,high,high,om_muscat,Gulf (other),neutral
+1641,ar,high,high,ma_casablanca,Maghreb,neutral
+1623,ar,high,high,eg_cairo,Egypt / Sudan,neutral
+1632,ar,high,high,sa_najdi,Saudi Najdi,neutral
+1665,ar,medium,medium,eg_cairo,Egypt / Sudan,neutral
+1684,ar,medium,medium,iq_baghdad,Iraq / Yemen,neutral
+1693,ar,medium,medium,sa_najdi,Saudi Najdi,angry
+1680,ar,medium,medium,dz_algiers,Maghreb,neutral
+1688,ar,medium,medium,ma_casablanca,Maghreb,neutral
+1703,ar,high,low,sa_hijazi,Saudi Hijazi,neutral
+1746,ar,high,high,kw_urban,Gulf (other),neutral
+1728,ar,high,high,ye_sanaa,Iraq / Yemen,angry
+1702,ar,high,high,om_muscat,Gulf (other),angry
+1704,ar,high,high,dz_algiers,Maghreb,neutral
+1756,ar,low,low,ps_urban,Levant,neutral
+1795,ar,low,low,dz_algiers,Maghreb,neutral
+1766,ar,low,low,ps_urban,Levant,neutral
+1787,ar,low,low,iq_baghdad,Iraq / Yemen,neutral
+1797,ar,low,low,bh_urban,Gulf (other),neutral
+1832,ar,low,low,ps_urban,Levant,neutral
+1823,ar,low,low,dz_algiers,Maghreb,neutral
+1834,ar,low,low,sa_najdi,Saudi Najdi,angry
+1828,ar,low,low,qa_urban,Gulf (other),neutral
+1815,ar,low,low,sa_hijazi,Saudi Hijazi,neutral
+1874,ar,low,low,bh_urban,Gulf (other),angry
+1899,ar,low,low,sy_damascus,Levant,angry
+1892,ar,low,low,om_muscat,Gulf (other),neutral
+1861,ar,low,low,bh_urban,Gulf (other),neutral
+1853,ar,low,low,kw_urban,Gulf (other),neutral
+1914,ar,medium,medium,jo_amman,Levant,neutral
+1916,ar,medium,medium,bh_urban,Gulf (other),neutral
+1902,ar,medium,medium,dz_algiers,Maghreb,neutral
+1947,ar,medium,medium,ye_sanaa,Iraq / Yemen,neutral
+1930,ar,medium,medium,sa_hijazi,Saudi Hijazi,neutral
+1981,ar,medium,medium,ye_sanaa,Iraq / Yemen,neutral
+1980,ar,medium,medium,kw_urban,Gulf (other),neutral
+1959,ar,medium,medium,ae_urban,Gulf (other),neutral
+1999,ar,medium,medium,eg_cairo,Egypt / Sudan,neutral
+1969,ar,medium,medium,ye_sanaa,Iraq / Yemen,polite

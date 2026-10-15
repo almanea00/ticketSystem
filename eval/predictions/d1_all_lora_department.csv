@@ -1,0 +1,201 @@
+ticket_id,lang,y_true,y_pred,dialect,group,tone
+28,ar,account_security,account_security,ye_sanaa,Iraq / Yemen,neutral
+11,ar,account_security,account_security,sy_damascus,Levant,neutral
+10,ar,account_security,account_security,sy_damascus,Levant,neutral
+41,ar,account_security,account_security,ps_urban,Levant,neutral
+2,ar,account_security,account_security,ps_urban,Levant,neutral
+52,ar,technical_support,technical_support,ps_urban,Levant,angry
+80,ar,technical_support,technical_support,jo_amman,Levant,neutral
+73,ar,technical_support,technical_support,iq_baghdad,Iraq / Yemen,neutral
+66,ar,technical_support,technical_support,bh_urban,Gulf (other),neutral
+63,ar,technical_support,technical_support,dz_algiers,Maghreb,neutral
+107,ar,order_management,order_management,sa_najdi,Saudi Najdi,neutral
+124,ar,order_management,order_management,lb_beirut,Levant,polite
+127,ar,order_management,order_management,ae_urban,Gulf (other),neutral
+148,ar,order_management,order_management,kw_urban,Gulf (other),neutral
+112,ar,order_management,order_management,ae_urban,Gulf (other),neutral
+186,ar,subscription_management,subscription_management,ps_urban,Levant,neutral
+162,ar,subscription_management,subscription_management,msa,فصحى,neutral
+198,ar,subscription_management,subscription_management,bh_urban,Gulf (other),neutral
+173,ar,subscription_management,subscription_management,om_muscat,Gulf (other),neutral
+167,ar,subscription_management,subscription_management,sa_eastern,Saudi Eastern,neutral
+204,ar,order_management,returns_and_refunds,dz_algiers,Maghreb,angry
+234,ar,order_management,order_management,msa,فصحى,neutral
+249,ar,order_management,returns_and_refunds,tn_tunis,Maghreb,neutral
+200,ar,order_management,returns_and_refunds,ye_sanaa,Iraq / Yemen,neutral
+248,ar,order_management,returns_and_refunds,qa_urban,Gulf (other),neutral
+259,ar,logistics,logistics,ps_urban,Levant,angry
+294,ar,logistics,logistics,jo_amman,Levant,neutral
+260,ar,logistics,logistics,sy_damascus,Levant,neutral
+254,ar,logistics,logistics,kw_urban,Gulf (other),neutral
+296,ar,logistics,logistics,jo_amman,Levant,neutral
+302,ar,sales_and_promotions,sales_and_promotions,sd_khartoum,Egypt / Sudan,neutral
+301,ar,sales_and_promotions,sales_and_promotions,ps_urban,Levant,neutral
+321,ar,sales_and_promotions,sales_and_promotions,om_muscat,Gulf (other),neutral
+315,ar,sales_and_promotions,sales_and_promotions,ae_urban,Gulf (other),polite
+344,ar,sales_and_promotions,sales_and_promotions,ma_casablanca,Maghreb,polite
+369,ar,customer_relations,customer_relations,qa_urban,Gulf (other),neutral
+398,ar,customer_relations,customer_relations,bh_urban,Gulf (other),neutral
+364,ar,customer_relations,customer_relations,sa_eastern,Saudi Eastern,angry
+388,ar,customer_relations,logistics,dz_algiers,Maghreb,angry
+355,ar,customer_relations,customer_relations,sa_najdi,Saudi Najdi,neutral
+446,ar,logistics,logistics,sd_khartoum,Egypt / Sudan,neutral
+424,ar,logistics,logistics,dz_algiers,Maghreb,neutral
+440,ar,logistics,logistics,qa_urban,Gulf (other),neutral
+405,ar,logistics,logistics,om_muscat,Gulf (other),neutral
+444,ar,logistics,logistics,ps_urban,Levant,neutral
+468,ar,returns_and_refunds,returns_and_refunds,ye_sanaa,Iraq / Yemen,neutral
+451,ar,returns_and_refunds,returns_and_refunds,bh_urban,Gulf (other),neutral
+466,ar,returns_and_refunds,returns_and_refunds,tn_tunis,Maghreb,polite
+494,ar,returns_and_refunds,returns_and_refunds,ae_urban,Gulf (other),angry
+463,ar,returns_and_refunds,returns_and_refunds,ae_urban,Gulf (other),neutral
+540,ar,privacy_requests,order_management,sd_khartoum,Egypt / Sudan,neutral
+542,ar,privacy_requests,account_security,dz_algiers,Maghreb,neutral
+534,ar,privacy_requests,subscription_management,sa_eastern,Saudi Eastern,neutral
+521,ar,privacy_requests,subscription_management,tn_tunis,Maghreb,neutral
+548,ar,privacy_requests,account_security,ma_casablanca,Maghreb,neutral
+592,ar,logistics,logistics,jo_amman,Levant,neutral
+573,ar,logistics,logistics,ye_sanaa,Iraq / Yemen,neutral
+597,ar,logistics,logistics,dz_algiers,Maghreb,angry
+584,ar,logistics,logistics,ye_sanaa,Iraq / Yemen,neutral
+572,ar,logistics,logistics,kw_urban,Gulf (other),neutral
+640,ar,logistics,logistics,sa_najdi,Saudi Najdi,neutral
+636,ar,logistics,logistics,ps_urban,Levant,neutral
+609,ar,logistics,logistics,sa_najdi,Saudi Najdi,neutral
+611,ar,logistics,logistics,om_muscat,Gulf (other),neutral
+602,ar,logistics,logistics,dz_algiers,Maghreb,neutral
+658,ar,billing_and_payments,billing_and_payments,sd_khartoum,Egypt / Sudan,neutral
+694,ar,billing_and_payments,billing_and_payments,kw_urban,Gulf (other),angry
+674,ar,billing_and_payments,returns_and_refunds,iq_baghdad,Iraq / Yemen,neutral
+686,ar,billing_and_payments,returns_and_refunds,dz_algiers,Maghreb,neutral
+656,ar,billing_and_payments,returns_and_refunds,tn_tunis,Maghreb,neutral
+701,ar,returns_and_refunds,returns_and_refunds,sd_khartoum,Egypt / Sudan,neutral
+705,ar,returns_and_refunds,returns_and_refunds,ma_casablanca,Maghreb,neutral
+717,ar,returns_and_refunds,returns_and_refunds,sa_najdi,Saudi Najdi,neutral
+716,ar,returns_and_refunds,returns_and_refunds,tn_tunis,Maghreb,neutral
+722,ar,returns_and_refunds,returns_and_refunds,eg_cairo,Egypt / Sudan,neutral
+766,ar,billing_and_payments,billing_and_payments,msa,فصحى,neutral
+787,ar,billing_and_payments,billing_and_payments,om_muscat,Gulf (other),angry
+757,ar,billing_and_payments,billing_and_payments,sa_eastern,Saudi Eastern,neutral
+772,ar,billing_and_payments,billing_and_payments,ye_sanaa,Iraq / Yemen,neutral
+753,ar,billing_and_payments,billing_and_payments,msa,فصحى,neutral
+811,ar,technical_support,technical_support,jo_amman,Levant,neutral
+802,ar,technical_support,technical_support,ma_casablanca,Maghreb,neutral
+830,ar,technical_support,technical_support,dz_algiers,Maghreb,neutral
+821,ar,technical_support,technical_support,ps_urban,Levant,angry
+834,ar,technical_support,technical_support,jo_amman,Levant,neutral
+862,ar,sales_and_promotions,sales_and_promotions,iq_baghdad,Iraq / Yemen,neutral
+879,ar,sales_and_promotions,sales_and_promotions,iq_baghdad,Iraq / Yemen,neutral
+882,ar,sales_and_promotions,sales_and_promotions,om_muscat,Gulf (other),neutral
+852,ar,sales_and_promotions,sales_and_promotions,sa_eastern,Saudi Eastern,neutral
+887,ar,sales_and_promotions,sales_and_promotions,ae_urban,Gulf (other),neutral
+912,ar,logistics,logistics,ae_urban,Gulf (other),neutral
+948,ar,logistics,logistics,ma_casablanca,Maghreb,neutral
+910,ar,logistics,logistics,ye_sanaa,Iraq / Yemen,neutral
+931,ar,logistics,logistics,kw_urban,Gulf (other),neutral
+904,ar,logistics,logistics,sa_eastern,Saudi Eastern,neutral
+968,ar,billing_and_payments,billing_and_payments,bh_urban,Gulf (other),neutral
+998,ar,billing_and_payments,billing_and_payments,bh_urban,Gulf (other),polite
+962,ar,billing_and_payments,billing_and_payments,bh_urban,Gulf (other),neutral
+980,ar,billing_and_payments,billing_and_payments,om_muscat,Gulf (other),neutral
+950,ar,billing_and_payments,billing_and_payments,kw_urban,Gulf (other),neutral
+1010,ar,billing_and_payments,billing_and_payments,ma_casablanca,Maghreb,neutral
+1008,ar,billing_and_payments,billing_and_payments,sa_najdi,Saudi Najdi,neutral
+1044,ar,billing_and_payments,billing_and_payments,bh_urban,Gulf (other),neutral
+1049,ar,billing_and_payments,billing_and_payments,sa_hijazi,Saudi Hijazi,neutral
+1001,ar,billing_and_payments,billing_and_payments,jo_amman,Levant,neutral
+1086,ar,privacy_requests,privacy_requests,om_muscat,Gulf (other),neutral
+1055,ar,privacy_requests,privacy_requests,tn_tunis,Maghreb,neutral
+1069,ar,privacy_requests,privacy_requests,sa_hijazi,Saudi Hijazi,angry
+1090,ar,privacy_requests,privacy_requests,ma_casablanca,Maghreb,neutral
+1094,ar,privacy_requests,privacy_requests,dz_algiers,Maghreb,neutral
+1148,ar,sales_and_promotions,sales_and_promotions,msa,فصحى,polite
+1142,ar,sales_and_promotions,sales_and_promotions,ye_sanaa,Iraq / Yemen,neutral
+1105,ar,sales_and_promotions,sales_and_promotions,bh_urban,Gulf (other),neutral
+1147,ar,sales_and_promotions,sales_and_promotions,kw_urban,Gulf (other),neutral
+1149,ar,sales_and_promotions,sales_and_promotions,om_muscat,Gulf (other),neutral
+1168,ar,technical_support,technical_support,kw_urban,Gulf (other),angry
+1187,ar,technical_support,technical_support,lb_beirut,Levant,neutral
+1179,ar,technical_support,technical_support,ye_sanaa,Iraq / Yemen,polite
+1162,ar,technical_support,technical_support,sa_eastern,Saudi Eastern,neutral
+1186,ar,technical_support,technical_support,tn_tunis,Maghreb,neutral
+1249,ar,returns_and_refunds,returns_and_refunds,ae_urban,Gulf (other),neutral
+1201,ar,returns_and_refunds,returns_and_refunds,om_muscat,Gulf (other),angry
+1226,ar,returns_and_refunds,returns_and_refunds,jo_amman,Levant,neutral
+1243,ar,returns_and_refunds,returns_and_refunds,om_muscat,Gulf (other),neutral
+1203,ar,returns_and_refunds,returns_and_refunds,dz_algiers,Maghreb,neutral
+1258,ar,billing_and_payments,billing_and_payments,sa_hijazi,Saudi Hijazi,neutral
+1255,ar,billing_and_payments,billing_and_payments,iq_baghdad,Iraq / Yemen,neutral
+1270,ar,billing_and_payments,billing_and_payments,dz_algiers,Maghreb,angry
+1296,ar,billing_and_payments,billing_and_payments,jo_amman,Levant,neutral
+1297,ar,billing_and_payments,billing_and_payments,ps_urban,Levant,neutral
+1344,ar,logistics,logistics,jo_amman,Levant,polite
+1333,ar,logistics,logistics,bh_urban,Gulf (other),neutral
+1349,ar,logistics,logistics,tn_tunis,Maghreb,neutral
+1324,ar,logistics,logistics,ps_urban,Levant,neutral
+1335,ar,logistics,logistics,ps_urban,Levant,neutral
+1371,ar,technical_support,technical_support,eg_cairo,Egypt / Sudan,neutral
+1356,ar,technical_support,technical_support,ye_sanaa,Iraq / Yemen,neutral
+1359,ar,technical_support,technical_support,qa_urban,Gulf (other),neutral
+1350,ar,technical_support,technical_support,sa_najdi,Saudi Najdi,neutral
+1353,ar,technical_support,technical_support,kw_urban,Gulf (other),neutral
+1439,ar,returns_and_refunds,returns_and_refunds,ps_urban,Levant,angry
+1406,ar,returns_and_refunds,returns_and_refunds,ps_urban,Levant,neutral
+1440,ar,returns_and_refunds,returns_and_refunds,eg_cairo,Egypt / Sudan,neutral
+1441,ar,returns_and_refunds,returns_and_refunds,om_muscat,Gulf (other),neutral
+1428,ar,returns_and_refunds,returns_and_refunds,jo_amman,Levant,neutral
+1489,ar,customer_relations,customer_relations,qa_urban,Gulf (other),neutral
+1477,ar,customer_relations,customer_relations,iq_baghdad,Iraq / Yemen,neutral
+1453,ar,customer_relations,customer_relations,bh_urban,Gulf (other),neutral
+1496,ar,customer_relations,customer_relations,ps_urban,Levant,neutral
+1452,ar,customer_relations,customer_relations,bh_urban,Gulf (other),polite
+1527,ar,logistics,logistics,om_muscat,Gulf (other),neutral
+1528,ar,logistics,logistics,iq_baghdad,Iraq / Yemen,neutral
+1519,ar,logistics,logistics,ma_casablanca,Maghreb,neutral
+1535,ar,logistics,logistics,eg_cairo,Egypt / Sudan,neutral
+1542,ar,logistics,logistics,ye_sanaa,Iraq / Yemen,neutral
+1593,ar,logistics,logistics,bh_urban,Gulf (other),neutral
+1550,ar,logistics,logistics,iq_baghdad,Iraq / Yemen,neutral
+1595,ar,logistics,logistics,bh_urban,Gulf (other),polite
+1565,ar,logistics,logistics,om_muscat,Gulf (other),neutral
+1552,ar,logistics,logistics,ma_casablanca,Maghreb,neutral
+1621,ar,account_security,account_security,ae_urban,Gulf (other),neutral
+1609,ar,account_security,account_security,om_muscat,Gulf (other),neutral
+1641,ar,account_security,account_security,ma_casablanca,Maghreb,neutral
+1623,ar,account_security,account_security,eg_cairo,Egypt / Sudan,neutral
+1632,ar,account_security,account_security,sa_najdi,Saudi Najdi,neutral
+1665,ar,subscription_management,subscription_management,eg_cairo,Egypt / Sudan,neutral
+1684,ar,subscription_management,subscription_management,iq_baghdad,Iraq / Yemen,neutral
+1693,ar,subscription_management,subscription_management,sa_najdi,Saudi Najdi,angry
+1680,ar,subscription_management,subscription_management,dz_algiers,Maghreb,neutral
+1688,ar,subscription_management,subscription_management,ma_casablanca,Maghreb,neutral
+1703,ar,product_safety,product_safety,sa_hijazi,Saudi Hijazi,neutral
+1746,ar,product_safety,product_safety,kw_urban,Gulf (other),neutral
+1728,ar,product_safety,product_safety,ye_sanaa,Iraq / Yemen,angry
+1702,ar,product_safety,product_safety,om_muscat,Gulf (other),angry
+1704,ar,product_safety,product_safety,dz_algiers,Maghreb,neutral
+1756,ar,marketing_preferences,sales_and_promotions,ps_urban,Levant,neutral
+1795,ar,marketing_preferences,subscription_management,dz_algiers,Maghreb,neutral
+1766,ar,marketing_preferences,subscription_management,ps_urban,Levant,neutral
+1787,ar,marketing_preferences,marketing_preferences,iq_baghdad,Iraq / Yemen,neutral
+1797,ar,marketing_preferences,sales_and_promotions,bh_urban,Gulf (other),neutral
+1832,ar,technical_support,technical_support,ps_urban,Levant,neutral
+1823,ar,technical_support,technical_support,dz_algiers,Maghreb,neutral
+1834,ar,technical_support,technical_support,sa_najdi,Saudi Najdi,angry
+1828,ar,technical_support,technical_support,qa_urban,Gulf (other),neutral
+1815,ar,technical_support,technical_support,sa_hijazi,Saudi Hijazi,neutral
+1874,ar,technical_support,technical_support,bh_urban,Gulf (other),angry
+1899,ar,technical_support,technical_support,sy_damascus,Levant,angry
+1892,ar,technical_support,technical_support,om_muscat,Gulf (other),neutral
+1861,ar,technical_support,technical_support,bh_urban,Gulf (other),neutral
+1853,ar,technical_support,technical_support,kw_urban,Gulf (other),neutral
+1914,ar,warranty_and_repairs,warranty_and_repairs,jo_amman,Levant,neutral
+1916,ar,warranty_and_repairs,warranty_and_repairs,bh_urban,Gulf (other),neutral
+1902,ar,warranty_and_repairs,warranty_and_repairs,dz_algiers,Maghreb,neutral
+1947,ar,warranty_and_repairs,warranty_and_repairs,ye_sanaa,Iraq / Yemen,neutral
+1930,ar,warranty_and_repairs,warranty_and_repairs,sa_hijazi,Saudi Hijazi,neutral
+1981,ar,returns_and_refunds,returns_and_refunds,ye_sanaa,Iraq / Yemen,neutral
+1980,ar,returns_and_refunds,returns_and_refunds,kw_urban,Gulf (other),neutral
+1959,ar,returns_and_refunds,returns_and_refunds,ae_urban,Gulf (other),neutral
+1999,ar,returns_and_refunds,returns_and_refunds,eg_cairo,Egypt / Sudan,neutral
+1969,ar,returns_and_refunds,returns_and_refunds,ye_sanaa,Iraq / Yemen,polite

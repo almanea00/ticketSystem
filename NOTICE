@@ -1,0 +1,13 @@
+Ticket Assistant
+Copyright 2026 The Ticket Assistant authors
+
+The code in this repository (ticketassist/, scripts/, eval/) is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party models and data are NOT covered by this license and keep their own terms:
+  - LiquidAI/d1-3B: LFM Open License v1.0 (https://huggingface.co/LiquidAI/d1-3B/blob/main/LICENSE).
+    The LoRA adapters in runs/ are derivatives of d1-3B and are distributed under the same LFM Open License v1.0.
+  - google/embeddinggemma-2: Apache License 2.0.
+  - humain-ai/ALLaM-7B-Instruct-preview: Apache License 2.0.
+  - SDAIA Academy applied-nlp course data (data/course/): no license file in the source repository
+    (https://github.com/SDAIAAcademy/applied-nlp); used as course material.
+  - Generated datasets (GPT-6.1 Sol, Gemini Agron): synthetic, subject to the generators' terms of use.

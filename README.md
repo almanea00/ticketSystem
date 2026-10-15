@@ -14,6 +14,21 @@ message → ① safeguard → ② decisions (intent, team, priority) + ③ retri
 - **Retriever:** google/embeddinggemma-2 over the course help center (`data/course/kb`).
 - **Reply writer:** ALLaM-7B-Instruct, or any OpenAI-compatible API.
 
+## Screenshots
+
+**A prompt injection in Arabic is blocked by the safeguard** (the AI never sees it):
+
+![Arabic prompt injection blocked](docs/screenshots/injection_blocked.png)
+
+**A short dialect question, «وين فلوسي» ("where is my money?")**: the query is rewritten for the search, the refund
+pages are found and the reply explains the timelines, citing them:
+
+![Vague money question answered from the refund pages](docs/screenshots/vague_money_question.png)
+
+**A return question, with every stage shown and the reply streaming in:**
+
+![Return question streaming](docs/screenshots/return_streaming.png)
+
 ## Requirements
 
 - **Python 3.12** and [uv](https://docs.astral.sh/uv/); internet on the first run to download the models.

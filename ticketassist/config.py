@@ -30,7 +30,12 @@ def _load_dotenv(path: Path = ROOT / ".env") -> None:
         if not line or line.startswith("#") or "=" not in line:
             continue
         k, v = line.split("=", 1)
-        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+        v = v.strip()
+        if v[:1] in ('"', "'"):          # quoted: keep everything inside the quotes
+            v = v[1:].split(v[0], 1)[0]
+        else:                             # unquoted: a " #" starts a comment
+            v = v.split(" #", 1)[0].split("\t#", 1)[0].strip()
+        os.environ.setdefault(k.strip(), v)
 
 
 _load_dotenv()

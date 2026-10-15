@@ -1,7 +1,5 @@
 # Ticket Assistant Model Card
 
-Oct 15, 2026 · @Mr.Stark
-
 ## Model details
 
 The Ticket Assistant screens, classifies and answers customer-support tickets in Arabic (فصحى and Gulf dialects) and English, with one decision model and one adapter for every decision. Built for the SDAIA Academy Applied NLP capstone (Ticket Assistant use case), October 2026.

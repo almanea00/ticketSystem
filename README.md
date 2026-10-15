@@ -4,10 +4,15 @@ Screens, classifies and answers customer-support tickets for an online store, in
 English. Built for the [SDAIA Academy](https://github.com/SDAIAAcademy) Applied NLP capstone (Ticket Assistant use case,
 [SDAIAAcademy/applied-nlp](https://github.com/SDAIAAcademy/applied-nlp)).
 
-```
-message → ① safeguard → ② decisions (intent, team, priority) + ③ retrieval (query rewrite + EmbeddingGemma, top 4)
-        → ④ reply writer (answers from the retrieved help-center sections, cited) → reply
-```
+![Pipeline](docs/figures/pipeline.png)
+
+1. **Safeguard** (decision model): blocks prompt injections and harmful requests, and answers off-topic messages with
+   what the store can help with.
+2. **Decisions** (decision model): intent (40), team (13) and priority (low / medium / high). The app uses them to
+   order the queue and pick the team inbox, and the reply writer gets them in its prompt.
+3. **Retrieval** (EmbeddingGemma): the reply writer first rewrites the message as a clear search query (few-shot),
+   then the 4 closest help-center sections are found.
+4. **Reply writer** (ALLaM-7B or any OpenAI-compatible API): answers from those sections only and cites them as [n].
 
 - **Decision model:** [LiquidAI/d1-3B](https://huggingface.co/LiquidAI/d1-3B) fine-tuned with a LoRA (`runs/d1_lora_all`),
   merged into the weights with `python scripts/merge_lora.py` → `runs/d1_merged_all`.

@@ -115,22 +115,31 @@ class ApiWriter:
     def stream(self, messages):
         body = {"model": self.cfg.llm_api_model, "messages": messages, "stream": True, "temperature": 0,
                 "max_tokens": self.cfg.llm_max_tokens}
-        text = ""
-        with self.http.stream("POST", "/chat/completions", json=body) as r:
-            if r.status_code >= 400:
-                r.read()
-                raise RuntimeError(f"reply API error {r.status_code}: {r.text[:300]}")
-            for line in r.iter_lines():
-                if not line.startswith("data:"):
-                    continue
-                data = line[5:].strip()
-                if data == "[DONE]":
-                    break
-                choices = json.loads(data).get("choices") or [{}]
-                piece = (choices[0].get("delta") or {}).get("content") or ""
-                if piece:
-                    text += piece
-                    yield text.strip()
+        for _ in range(3):   # some models want max_completion_tokens, some refuse a temperature: adapt and retry
+            with self.http.stream("POST", "/chat/completions", json=body) as r:
+                if r.status_code >= 400:
+                    r.read()
+                    err = r.text
+                    if r.status_code == 400 and "max_tokens" in err and "max_tokens" in body:
+                        body["max_completion_tokens"] = body.pop("max_tokens")
+                        continue
+                    if r.status_code == 400 and "temperature" in err and "temperature" in body:
+                        body.pop("temperature")
+                        continue
+                    raise RuntimeError(f"reply API error {r.status_code}: {err[:300]}")
+                text = ""
+                for line in r.iter_lines():
+                    if not line.startswith("data:"):
+                        continue
+                    data = line[5:].strip()
+                    if data == "[DONE]":
+                        break
+                    choices = json.loads(data).get("choices") or [{}]
+                    piece = (choices[0].get("delta") or {}).get("content") or ""
+                    if piece:
+                        text += piece
+                        yield text.strip()
+                return
 
 
 def make_writer(cfg: Config = CONFIG):

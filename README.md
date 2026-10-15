@@ -1,7 +1,8 @@
 # Ticket Assistant
 
 Screens, classifies and answers customer-support tickets for an online store, in Arabic (فصحى and Gulf dialects) and
-English. Built for the SDAIA Academy Applied NLP capstone (Ticket Assistant use case).
+English. Built for the [SDAIA Academy](https://github.com/SDAIAAcademy) Applied NLP capstone (Ticket Assistant use case,
+[SDAIAAcademy/applied-nlp](https://github.com/SDAIAAcademy/applied-nlp)).
 
 ```
 message → ① safeguard → ② decisions (intent, team, priority) + ③ retrieval (query rewrite + EmbeddingGemma, top 4)
@@ -12,6 +13,24 @@ message → ① safeguard → ② decisions (intent, team, priority) + ③ retri
   merged into the weights with `python scripts/merge_lora.py` → `runs/d1_merged_all`.
 - **Retriever:** google/embeddinggemma-2 over the course help center (`data/course/kb`).
 - **Reply writer:** ALLaM-7B-Instruct, or any OpenAI-compatible API.
+
+## Requirements
+
+- **Python 3.12** and [uv](https://docs.astral.sh/uv/); internet on the first run to download the models.
+- **An NVIDIA GPU with about 10 GB** for the decision model (d1-3B) and the embedder. The decision model cannot be
+  replaced by an API key: it reads the probability of each option, which chat APIs do not return. It can run in
+  the app or behind your own vLLM server (see `.env.example`).
+- **The reply writer:** either a second GPU with about 6 GB (ALLaM-7B in 4-bit, the default `TA_LLM=local`), or an
+  API key for any OpenAI-compatible provider. With an API key, one GPU is enough:
+
+```bash
+TA_LLM=api
+TA_LLM_API_BASE=https://api.openai.com/v1     # or Groq, OpenRouter, Azure, Together, a local vLLM or Ollama server
+TA_LLM_API_KEY=sk-...
+TA_LLM_API_MODEL=gpt-4o-mini
+```
+
+On a single GPU with the local reply writer, set `TA_LLM_DEVICE=cuda:0` (it needs about 16 GB in total).
 
 ## Run
 

@@ -92,3 +92,29 @@ class RemoteD1:
 
     def system_one(self, state, questions, images=None):
         return self.system_one_batch([(state, questions)])[0]
+
+
+class SystemOneAPI:
+    """A hosted decision API that speaks the same System One format as d1: POST {base}/systemone with
+    {"model", "state", "questions"} and get {"answers": {name: {"type", "noul" | "choice", "probabilities", ...}}}.
+    Works with TypeSafe's Jev (https://api.typesafe.ai/v1, model jev-latest) and any server with that format."""
+
+    def __init__(self, base_url: str, model: str, api_key: str = "", path: str = "/systemone"):
+        if not api_key and "localhost" not in base_url and "127.0.0.1" not in base_url:
+            raise ValueError("TA_DECISION=systemone needs TA_DECISION_API_KEY (or TYPESAFE_API_KEY)")
+        self.model, self.path = model, path
+        self.http = httpx.Client(base_url=base_url.rstrip("/"), timeout=60,
+                                 headers={"Authorization": f"Bearer {api_key}"} if api_key else {})
+
+    def system_one(self, state, questions, images=None):
+        body = {"model": self.model, "state": state, "questions": questions}
+        r = self.http.post(self.path, json=body)
+        if r.status_code >= 400:
+            raise RuntimeError(f"decision API error {r.status_code}: {r.text[:300]}")
+        out = r.json()
+        return {"answers": out["answers"], "usage": out.get("usage", {})}
+
+    def system_one_batch(self, requests):
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=min(8, len(requests) or 1)) as ex:
+            return list(ex.map(lambda r: self.system_one(r[0], r[1]), requests))

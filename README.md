@@ -37,10 +37,21 @@ pages are found and the reply explains the timelines, citing them:
 ## Requirements
 
 - **Python 3.12** and [uv](https://docs.astral.sh/uv/); internet on the first run to download the models.
-- **An NVIDIA GPU with about 10 GB** for the decision model (our fine-tuned d1-3B) and the embedder. The decision model
-  reads the probability of every option, so it runs in the app or on your own vLLM server (`TA_DECISION=api`, with a
-  key if your server has one; see `.env.example`), but not on a general chat API such as OpenAI's, which does not
-  return those probabilities for every option.
+- **The decision model** (safeguard, intent, team, priority), one of:
+  - **our fine-tuned d1-3B on an NVIDIA GPU** (about 10 GB with the embedder), in the app or on your own vLLM server
+    (`TA_DECISION=local` or `api`). This is the model the report's numbers are for.
+  - **a hosted decision API in the same System One format, such as TypeSafe's Jev**, with no GPU for decisions
+    (zero-shot, so the report's decision numbers do not apply to it):
+
+```bash
+TA_DECISION=systemone
+TA_DECISION_API_BASE=https://api.typesafe.ai/v1
+TA_DECISION_API_KEY=...
+TA_DECISION_API_MODEL=jev-latest
+```
+
+  A general chat API such as OpenAI's chat completions does not work here: it does not return a probability for every
+  option.
 - **The reply writer:** either a second GPU with about 6 GB (ALLaM-7B in 4-bit, the default `TA_LLM=local`), or an
   API key for any OpenAI-compatible provider. With an API key, one GPU is enough:
 

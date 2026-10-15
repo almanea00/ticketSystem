@@ -3,9 +3,10 @@
 Values come from environment variables (or a `.env` file in the project root); nothing needs editing in the code.
 Copy `.env.example` to `.env` and change what you need. The three model slots:
 
-  decision model  TA_DECISION = local | api              a d1-style model by link (TA_DECISION_MODEL: Hugging Face id
+  decision model  TA_DECISION = local | api | systemone  a d1-style model by link (TA_DECISION_MODEL: Hugging Face id
                                                          or folder; default our fine-tuned runs/d1_merged_all), or the
-                                                         same model behind a vLLM server (TA_DECISION_API_BASE/_KEY/_MODEL)
+                                                         same model behind a vLLM server, or a hosted decision API in the same format such
+                                                         as TypeSafe's Jev (systemone) (TA_DECISION_API_BASE/_KEY/_MODEL)
   embedder        TA_EMBEDDER = <Hugging Face id> | api   local sentence-transformers model, or any OpenAI-compatible
                                                          /embeddings endpoint (TA_EMBED_API_BASE/_KEY/_MODEL)
   reply writer    TA_LLM = local | api                   local Hugging Face chat model (TA_LLM_MODEL), or any
@@ -56,7 +57,7 @@ class Config:
     decision_model: str = field(default_factory=lambda: _env("TA_DECISION_MODEL", "runs/d1_merged_all"))
     device: str = field(default_factory=lambda: _env("TA_DEVICE", "cuda:0"))
     decision_api_base: str = field(default_factory=lambda: _env("TA_DECISION_API_BASE", "http://127.0.0.1:18031/v1"))
-    decision_api_key: str = field(default_factory=lambda: _env("TA_DECISION_API_KEY", ""))
+    decision_api_key: str = field(default_factory=lambda: _env("TA_DECISION_API_KEY", _env("TYPESAFE_API_KEY", "")))
     decision_api_model: str = field(default_factory=lambda: _env("TA_DECISION_API_MODEL", "d1-ticket"))
     questions: str = field(default_factory=lambda: _env("TA_QUESTIONS", "ticketassist/questions.json"))   # intent / team / priority
 
@@ -90,7 +91,7 @@ class Config:
     def describe(self) -> str:
         llm = f"{self.llm_api_model} via {self.llm_api_base}" if self.llm == "api" else self.llm_model
         emb = f"{self.embed_api_model} via {self.embed_api_base}" if self.embedder == "api" else self.embedder
-        dec = f"{self.decision_api_model} via {self.decision_api_base}" if self.decision == "api" else self.decision_model
+        dec = f"{self.decision_api_model} via {self.decision_api_base}" if self.decision in ("api", "systemone") else self.decision_model
         return f"decision: {dec} · embedder: {emb} · reply: {llm}"
 
 

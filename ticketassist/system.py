@@ -195,7 +195,10 @@ class TicketSystem:
         device = device or cfg.device
         if draft_device:
             cfg.llm_device = draft_device
-        if cfg.decision == "api":   # the decision model behind a vLLM server
+        if cfg.decision == "systemone":   # a hosted decision API in the same format (TypeSafe Jev, ...)
+            from .d1_remote import SystemOneAPI
+            self.d1 = SystemOneAPI(cfg.decision_api_base, cfg.decision_api_model, cfg.decision_api_key)
+        elif cfg.decision == "api":   # the decision model behind a vLLM server
             from .d1_remote import RemoteD1
             self.d1 = RemoteD1(cfg.decision_api_base, cfg.decision_api_model, model_files(cfg.decision_model), cfg.decision_api_key)
         else:

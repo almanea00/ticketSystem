@@ -6,7 +6,7 @@ Oct 15, 2026 · @Mr.Stark
 
 The Ticket Assistant screens, classifies and answers customer-support tickets in Arabic (فصحى and Gulf dialects) and English, with one decision model and one adapter for every decision. Built for the SDAIA Academy Applied NLP capstone (Ticket Assistant use case), October 2026.
 
-*(Pipeline: customer message → ① safeguard → ② decisions (intent, team, priority) and ③ retrieval (query rewrite + EmbeddingGemma, top 4 sections) → ④ reply writer, given the sections and the decisions → reply to the customer, cited from the help center. The diagram is in the online version.)*
+![Pipeline: safeguard, then decisions and retrieval, then the reply writer](docs/figures/pipeline.png)
 
 The app does not have to wait for the reply: `handle_stream` hands over each stage's result as soon as it finishes, so priority can order the queue and the team can pick the inbox about 0.15 s after a ticket arrives, while the reply is still being written.
 
@@ -47,7 +47,7 @@ The LoRA trained on 487 support messages and 160 safeguard messages; every repor
 
 The baseline is zero-shot d1-3B, which already beats the course's TF-IDF baseline on intent (82.0 against 65.8); two LoRA steps add 10 to 30 points on every decision and close the safeguard's last gap.
 
-*(Chart in the online version: results/support10k.csv · arabic_support_natural_10000.csv test split, 2,000 messages)*
+![Macro-F1 of the baselines and d1 + LoRA on intent, team and priority](docs/figures/baseline_vs_lora.png)
 
 Trained encoders beat zero-shot d1 on team and priority, which follow dataset-specific conventions; a 4.2-minute LoRA on the same 487 messages puts d1 ahead on all three.
 
@@ -75,7 +75,7 @@ Every setting below was compared on held-out data before it was fixed; the chose
 | Answer threshold | below 0.3 → a person | **0.3** | all 30 answerable course questions pass |
 | Reply model | ALLaM-7B-Instruct in 4-bit NF4 | **4-bit on the RTX 3060** | fits in 5.1 GB beside d1 on the other GPU |
 
-*(Chart in the online version: results/guard_compare.csv · Gemini v1 safeguard set, 800 messages (200 per label))*
+![Customers blocked and attacks let through by support cut-off](docs/figures/safeguard_settings.png)
 
 Raising the support cut-off blocks more real customers for both versions; only the LoRA reaches zero attacks, from 0.05 upward. The cut-offs were chosen on this same Gemini sample, so its numbers are slightly optimistic.
 
@@ -83,27 +83,9 @@ Raising the support cut-off blocks more real customers for both versions; only t
 
 The right help-center section is in the top 3 for every answerable course question, in English and Arabic (Hit@3 1.00), and the d1 check short or dialect messages are searched with a query the reply writer rewrites from them (few-shot), so "وين فلوسي" finds the refund pages. Test: the course's Lab 2.3 protocol, `rag_eval.csv` (23 English and 7 Arabic answerable questions, 2 unanswerable) over 33 help-center sections, one question at a time on the RTX 3090.
 
-**Retrieval**
+![Hit@3 of each retrieval method, all and Arabic questions](docs/figures/rag_retrieval.png)
 
-| System | Hit@1 | Hit@3 | MRR | Hit@3 Arabic | p50 |
-| --- | --- | --- | --- | --- | --- |
-| BM25 | 0.53 | 0.60 | 0.62 | 0.14 | 0.1 ms |
-| Dense e5-small (course baseline) | 0.87 | 0.97 | 0.91 | 0.86 | 12 ms |
-| Hybrid BM25 + EmbeddingGemma (RRF) | 0.63 | 0.87 | 0.75 | 0.57 | 60 ms |
-| Dense EmbeddingGemma | 0.90 | 1.00 | 0.94 | 1.00 | 60 ms |
-| **Dense EmbeddingGemma + d1 check of the top 3 (used)** | **0.93** | **1.00** | **0.97** | **1.00** | **113 ms** |
-
-**Embedding models** (dense retrieval only, same section text for every model; Doha → EN = finding the English translation of a MADAR Doha Gulf sentence among 2,000)
-
-| Model | Size | Hit@1 | Hit@3 (all / Arabic) | MRR | Doha → EN | p50 GPU | p50 CPU |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| bge-m3 | 568M | 0.93 | 1.00 / 1.00 | 0.96 | 75.6 | 25 ms | 662 ms |
-| LaBSE | 472M | 0.90 | 0.93 / 1.00 | 0.93 | 83.9 | 15 ms | 499 ms |
-| **EmbeddingGemma-2** | **271M** | **0.87** | **0.97 / 1.00** | **0.93** | **69.9** | **62 ms** | **219 ms** |
-| e5-base | 278M | 0.80 | 0.93 / 0.86 | 0.87 | 72.2 | 13 ms | 109 ms |
-| e5-small | 118M | 0.90 | 0.97 / 0.86 | 0.93 | 60.0 | 12 ms | 27 ms |
-| MiniLM-L12 multilingual | 118M | 0.73 | 0.90 / 1.00 | 0.83 | 56.3 | 12 ms | 28 ms |
-| GATE-AraBert-v1 | 135M | 0.37 | 0.57 / 0.43 | 0.50 | 14.2 | 13 ms | 149 ms |
+![Embedding models: retrieval Hit@1, Gulf to English, size and CPU time](docs/figures/embedding_models.png)
 
 **"Can the help center answer this?" check** (22 store questions the help center does not cover, plus the 30 answerable ones)
 
@@ -112,16 +94,7 @@ The right help-center section is in the top 3 for every answerable course questi
 | EmbeddingGemma top 3 → ALLaM, no check | 16 of 22 (e.g. a one-year fridge warranty, a loyalty scheme that does not exist) | 0 of 22 | 30 of 30 |
 | **+ d1 + LoRA check, one call over the top 3 (used)** | **at most 2 of 22 can get a made-up answer; the other 20 get a reply that only asks for details (no help-center sections given to the AI)** | **20 of 22** | **30 of 30** |
 
-**Latency per ticket** (80 messages, d1 and EmbeddingGemma on the RTX 3090, ALLaM on the RTX 3060)
-
-| Stage | p50 | p95 |
-| --- | --- | --- |
-| Safeguard (one d1 call) | 54 ms | 66 ms |
-| Intent, team, priority (one d1 call) | 82 ms | 102 ms |
-| Retrieval + answer check | 113 ms |  |
-| Reply (ALLaM-7B, 4-bit) | 5.5 s | 8.7 s |
-| Output checks | 69 ms | 75 ms |
-| Whole ticket | 4.0 s | 8.9 s |
+![Time per stage of one ticket](docs/figures/latency.png)
 
 A refused or unanswerable ticket finishes in under 0.3 s because ALLaM never runs. With 30 questions one question is 3.3 points, so the top rows are near perfect rather than precisely ranked.
 
